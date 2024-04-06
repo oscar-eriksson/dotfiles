@@ -1,0 +1,2 @@
+alias nixosconf="sudo vim /etc/nixos/configuration.nix"
+alias nixosbuild="sudo nixos-rebuild switch"
