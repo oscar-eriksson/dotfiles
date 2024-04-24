@@ -24,6 +24,8 @@ source_if_exists $DOTFILES/zsh/functions.zsh
 source_if_exists $DOTFILES/zsh/p10k.zsh
 source_if_exists $DOTFILES/zsh/oh-my-zsh.zsh
 
+source_if_exists $DOTFILES/nvim/path.nvim
+
 source_if_exists $HOME/.asdf/asdf.sh
 
 source_if_in_wsl $DOTFILES/zsh/wsl.zsh
