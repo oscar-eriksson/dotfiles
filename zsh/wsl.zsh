@@ -1,10 +1,7 @@
 alias xclip="clip.exe"
 
-#Docker
-alias dockers="sudo service docker start"
-
 #Docker autostart
-DOCKER_DISTRO="Ubuntu-22.04"
+DOCKER_DISTRO="Ubuntu"
 DOCKER_DIR=/mnt/wsl/shared-docker
 DOCKER_SOCK="$DOCKER_DIR/docker.sock"
 export DOCKER_HOST="unix://$DOCKER_SOCK"
@@ -14,3 +11,5 @@ if [ ! -S "$DOCKER_SOCK" ]; then
     /mnt/c/Windows/System32/wsl.exe -d $DOCKER_DISTRO sh -c "nohup sudo -b dockerd < /dev/null > $DOCKER_DIR/dockerd.log 2>&1"
 fi
 
+#Docker
+alias dockers="sudo service docker start"
