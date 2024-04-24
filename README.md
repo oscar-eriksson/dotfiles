@@ -1,6 +1,13 @@
 # dotfiles
 
+## Install
+
 ```bash
+cd $HOME
+
+# clone this repo
+git clone
+
 cd dotfiles
 chmod +x ./install/bootstrap.sh
 ./install/bootstrap.sh
