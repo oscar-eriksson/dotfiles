@@ -9,7 +9,7 @@ sudo chsh -s /usr/bin/zsh
 
 
 # extra deps
-sudo apt-get install fzf tldr curl -y
+sudo apt-get install fzf tldr curl ripgrep git make unzip gcc -y
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --keep-zshrc --unattended"
