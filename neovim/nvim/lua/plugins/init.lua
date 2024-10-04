@@ -13,7 +13,6 @@ return {
     config = function()
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
-      require("custom.configs.lspconfig")
     end,
   },
 
@@ -23,7 +22,7 @@ return {
     opts = function ()
       return require "custom.configs.null-ls"
     end
-  }
+  },
 
   {
   	"williamboman/mason.nvim",
@@ -35,10 +34,13 @@ return {
         "css-lsp" ,
         "prettier",
         "typescript-language-server",
-        "eslint-lsp"
+        "eslint-lsp",
+        "terraform-ls",
+        "tflint",
   		},
   	},
   },
+
   {
     "williamboman/mason-lspconfig.nvim"
   }

@@ -12,3 +12,7 @@
 [credential "https://bitbucket.org/axfood"]
         username = oscar-eriksson
         helper = "!f() { test \"$1\" = get && echo \"password=$(cat $HOME/.secret/bitbucket)\"; }; f"
+[init]
+	defaultBranch = main
+[alias]
+	addforce = "!git add *; git commit --amend --no-edit; git push -f"

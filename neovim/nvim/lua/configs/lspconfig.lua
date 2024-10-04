@@ -21,3 +21,18 @@ lspconfig.tsserver.setup {
   on_init = on_init,
   capabilities = capabilities,
 }
+
+-- terraform
+lspconfig.terraformls.setup {
+  vim.api.nvim_create_autocmd({"BufWritePre"}, {
+    pattern = {"*.tf", "*.tfvars"},
+    callback = function ()
+      vim.lsp.buf.format()
+    end
+  })
+}
+
+lspconfig.tflint.setup {
+  on_attach = on_attach,
+  flags = { debounce_text_changes = 150 },
+}

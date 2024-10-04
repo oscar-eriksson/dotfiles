@@ -33,6 +33,12 @@ source_if_in_wsl $DOTFILES/zsh/wsl.zsh
 # Uncomment the following line to disable colors in ls.
 DISABLE_LS_COLORS="false"
 
+# path
+export PATH=$PATH:/usr/local/go/bin
+
 #NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm 
+
+# sst
+export PATH=/home/a137453/.sst/bin:$PATH
