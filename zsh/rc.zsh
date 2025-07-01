@@ -10,6 +10,8 @@ source_if_in_wsl () {
     fi
 }
 
+source_if_in_wsl $DOTFILES/zsh/wsl.zsh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -28,7 +30,6 @@ source_if_exists $DOTFILES/neovim/path.nvim
 
 source_if_exists $HOME/.asdf/asdf.sh
 
-source_if_in_wsl $DOTFILES/zsh/wsl.zsh
 
 # Uncomment the following line to disable colors in ls.
 DISABLE_LS_COLORS="false"
